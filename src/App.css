@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.sect{
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 18px;
+  padding-right: 18px;
+
+}
+
+header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgb(223, 222, 222);
+}
+
+header .container {
+  display: flex;
+  float: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logogroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+#logoicon {
+  width: 42px;
+}
+
+#namelogo {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  font-family: 'Nova Script', system-ui;
+  font-weight: 800;
+}
+
+#menubutton {
+  background-color: transparent;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+
+p {
+  color: rgb(138, 137, 137);
+  max-width: 980px;
+  line-height: 150%;
+}
+
+h1 {
+  font-size: 2.85rem;
+  margin-bottom: 1rem;
+  line-height: 110%;
+}
+
+h2,
+h3 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  line-height: 110%;
+}
+
+.blog h3 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  line-height: 110%;
+}
+
+
+nav {
+  display: none;
+}
+
+.Button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  gap: 10px;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.ButtonPrimary {
+  background-color: black;
+  color: white;
+}
+
+.ButtonPrimary:hover {
+  background-color: rgb(173, 173, 173);
+  color: rgb(0, 0, 0);
+  transition: all 0.2s ease-in;
+}
+
+.ButtonSecondary {
+  border: 1px solid black;
+  color: black;
+}
+
+.ButtonSecondary:hover {
+  background-color: rgb(173, 173, 173);
+  color: rgb(0, 0, 0);
+  border: none;
+  transition: 0.2s ease-in;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#aboutSection {
+  background-color: rgb(245, 245, 245);
+}
+
+#BlogPost {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  gap: 1rem;
+}
+
+.blog:hover {
+  background-color: rgb(206, 206, 206);
+  transition: all 0.2s ease-in-out;
+}
+
+.blog {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px solid rgb(150, 150, 150);
+  border-radius: 0.5rem;
+}
+
+.blog img {
+  width: 100%;
+}
+
+.blog p {
+  font-size: 14px;
+}
+
+.blog .Button {
+  color: black;
+  font-weight: 550;
+}
+
+.blog .Button:hover {
+  font-weight: 400;
+}
+
+/* This site media quiery starts here... */
+@media only screen and (max-width: 600px) {
+  .ButtonSecondary {
+      margin-top: 10px;
+  }
+
+  section h1 {
+      font-size: 32px;
+  }
+
+  section p {
+      text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .buttonGroup {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .ButtonSecondary {
+      margin-left: 10px;
+  }
+
+  h2 {
+      font-size: 26px;
+  }
+
+  #BlogPost {
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  #menubutton {
+      display: none;
+  }
+
+  nav {
+      display: block;
+  }
+
+  nav ul {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      list-style: none;
+  }
+
+  nav a {
+      text-decoration: none;
+      color: rgb(68, 68, 68);
+  }
+
+  nav a:hover {
+      text-decoration: underline;
+      color: black;
+  }
+
+  #BlogPost {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  .blogHead {
+      text-align: center;
+
+   }
+
+}
+
+@media only screen and (min-width: 992px) {
+  #BlogPost {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1200px) {}
